@@ -30,6 +30,7 @@ jobs:
         # run: |
       - name: Install dbt
         run: |
+          wget https://github.com/dbt-labs/dbt-cli/releases/download/v0.38.15/dbt_0.38.15_linux_amd64.tar.gz
           tar -xf dbt_0.29.9_linux_amd64.tar.gz
           ls -la
           mkdir -p ~/.dbt
