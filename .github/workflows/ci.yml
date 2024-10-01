@@ -1,0 +1,39 @@
+
+name: CI
+
+permissions:
+  contents: write
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+env:
+  DBT_CLOUD: ${{secrets.DBT_CLOUD}}
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+ # This workflow contains a single job called "build
+  
+  env-dev:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - uses: actions/checkout@v3
+      - name: create dev env
+        # working-directory: snowflake-clone/test
+        run: |
+      - name: Install dbt
+        run: |
+          tar -xf dbt_0.29.9_linux_amd64.tar.gz
+          ls -la
+          mkdir -p ~/.dbt
+          echo $DBT_CLOUD > ~/.dbt/dbt_cloud.yml
+          cat ~/.dbt/dbt_cloud.yml
+
+
