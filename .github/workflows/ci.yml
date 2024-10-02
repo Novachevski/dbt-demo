@@ -36,5 +36,6 @@ jobs:
           mkdir -p ~/.dbt
           echo $DBT_CLOUD > ~/.dbt/dbt_cloud.yml
           cat ~/.dbt/dbt_cloud.yml
+          ./dbt --version
 
 
