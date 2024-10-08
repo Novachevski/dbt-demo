@@ -34,7 +34,7 @@ jobs:
           tar -xf dbt_0.38.15_linux_amd64.tar.gz
           ls -la
           mkdir -p ~/.dbt
-          echo $DBT_CLOUD > ~/.dbt/dbt_cloud.yml
+          cp dbt_cloud.yml  ~/.dbt/
           cat ~/.dbt/dbt_cloud.yml
           echo =========================
           cat ~/.dbt/dbt_cloud.yml
