@@ -52,4 +52,8 @@ jobs:
         with:
           name: dist-without-markdown
           path: |
-            /app/dbt_project/8fb2b2cd-2d51-4ac5-8cba-12eac40ec6d4/target/
+            target/
+      - name: Deploy 
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: target/
