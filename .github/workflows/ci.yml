@@ -46,3 +46,4 @@ jobs:
           ls -la
           ./dbt run 
           ./dbt docs generate
+          ls -la
