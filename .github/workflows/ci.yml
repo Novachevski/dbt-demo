@@ -35,7 +35,7 @@ jobs:
           ls -la
           mkdir -p ~/.dbt
           cp dbt_cloud.yml  ~/.dbt/
-          cat ~/.dbt/dbt_cloud.yml
+          cat ~/.dbt/d.yml
           echo =========================
           cat ~/.dbt/dbt_cloud.yml
           echo =========================
@@ -46,3 +46,4 @@ jobs:
         run: |
           ls -la
           ./dbt run 
+          ./dbt docs generate
