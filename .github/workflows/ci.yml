@@ -22,7 +22,7 @@ jobs:
   
   env-dev:
     runs-on: ubuntu-latest
-    environment: dev
+    # environment: dev
     steps:
       - uses: actions/checkout@v3
         # name: code pull
@@ -36,6 +36,9 @@ jobs:
           mkdir -p ~/.dbt
           echo $DBT_CLOUD > ~/.dbt/dbt_cloud.yml
           cat ~/.dbt/dbt_cloud.yml
+          export PATH="/usr/local/bin:$PATH" >> ~/.bashrc
           ./dbt --version
-
-
+      - name: Run dbt
+        run: 
+          - ls -la
+          - run dbt
