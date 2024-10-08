@@ -35,7 +35,6 @@ jobs:
           ls -la
           mkdir -p ~/.dbt
           cp dbt_cloud.yml  ~/.dbt/
-          cat ~/.dbt/d.yml
           echo =========================
           cat ~/.dbt/dbt_cloud.yml
           echo =========================
