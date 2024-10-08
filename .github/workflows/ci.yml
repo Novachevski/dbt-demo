@@ -52,4 +52,4 @@ jobs:
         with:
           name: dist-without-markdown
           path: |
-            /app/dbt_project/8fb2b2cd-2d51-4ac5-8cba-12eac40ec6d4/target/
+            /app/dbt_project/
