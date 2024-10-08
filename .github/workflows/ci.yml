@@ -42,4 +42,4 @@ jobs:
       - name: Run dbt
         run: |
           ls -la
-          dbt run 
+          ./dbt run 
