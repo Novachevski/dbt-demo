@@ -1,0 +1,14 @@
+version: "1"
+context:
+  active-host: "tc614.us1.dbt.com"
+  active-project: "70403103965771"
+projects:
+  - project-name: "demo"
+    project-id: "70403103965771"
+    account-name: "bluecloud"
+    account-id: "70403103955492"
+    account-host: "tc614.us1.dbt.com"
+    token-name: "cloud-cli-de00"
+    token-value: "dbtu_Skl0uCcDx9wuRqYvT0GSas01lZDLZy5Nd1_-WUZFMADHnA0BlU"
+
+
