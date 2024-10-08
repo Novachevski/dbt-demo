@@ -46,11 +46,10 @@ jobs:
           ls -la
           ./dbt run 
           ./dbt docs generate
-          ls -la /app/dbt_project/
+          ls -la
       - name: Archive production artifacts
         uses: actions/upload-artifact@v4
         with:
           name: dist-without-markdown
           path: |
-            /app/dbt_project/
-            
+            /app/dbt_project/8fb2b2cd-2d51-4ac5-8cba-12eac40ec6d4/target/
