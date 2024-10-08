@@ -1,1 +1,1 @@
-{"_invocation_id": "c5b908ce-47d7-40de-a5d5-ec53f0060cdd", "linked": {"0": {"name": "model.jaffle_shop.customers", "type": "model"}, "1": {"name": "model.jaffle_shop.stg_customers", "type": "model", "succ": [0]}, "2": {"name": "model.jaffle_shop.stg_orders", "type": "model", "succ": [0]}}}
+{"_invocation_id": "19350269-1857-4613-853c-498e6871ba23", "linked": {"0": {"name": "model.jaffle_shop.customers", "type": "model"}, "1": {"name": "model.jaffle_shop.stg_customers", "type": "model", "succ": [0]}, "2": {"name": "model.jaffle_shop.stg_orders", "type": "model", "succ": [0]}}}
