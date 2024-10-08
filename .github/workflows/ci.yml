@@ -36,7 +36,9 @@ jobs:
           mkdir -p ~/.dbt
           echo $DBT_CLOUD > ~/.dbt/dbt_cloud.yml
           cat ~/.dbt/dbt_cloud.yml
+          echo =========================
           echo ~/.dbt/dbt_cloud.yml
+          echo =========================
           export PATH="$PWD/dbt:$PATH" >> ~/.bashrc
           source ~/.bashrc
           ./dbt --version
