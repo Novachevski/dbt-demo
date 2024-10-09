@@ -51,7 +51,7 @@ jobs:
       #     name: dist-without-markdown
       #     path: |
       #       target/
-      - name: Deploy 
+      - name: documentation 
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: target/
