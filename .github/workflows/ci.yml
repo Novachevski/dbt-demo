@@ -44,7 +44,7 @@ jobs:
           export PATH="$PWD/dbt:$PATH" >> ~/.bashrc
           source ~/.bashrc
           ./dbt --version
-          echo $DBT_CLOUD | yq .
+          echo $DBT_CLOUD
       - name: Run dbt
         run: |
           ls -la
