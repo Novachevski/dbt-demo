@@ -39,7 +39,7 @@ jobs:
           echo =========================
           export PATH="$PWD/dbt:$PATH" >> ~/.bashrc
           source ~/.bashrc
-          PRINTENV
+          echo $PATH
           ./dbt --version
       - name: Run dbt
         run: |
