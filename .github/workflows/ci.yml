@@ -37,9 +37,11 @@ jobs:
           echo =========================
           cat ~/.dbt/dbt_cloud.yml
           echo =========================
-          export PATH="$PWD/dbt:$PATH" >> ~/.bashrc
+          export PATH="$PWD/:$PATH" >> ~/.bashrc
+          echo "$PATH/dbt"
           source ~/.bashrc
           echo $PATH
+          dbt --version
           ./dbt --version
       - name: Run dbt
         run: |
