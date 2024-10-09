@@ -32,9 +32,9 @@ jobs:
         run: |
           wget https://github.com/dbt-labs/dbt-cli/releases/download/v0.38.15/dbt_0.38.15_linux_amd64.tar.gz
           tar -xf dbt_0.38.15_linux_amd64.tar.gz
-          wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64  &&\
+          wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O yq &&\
           ls -la
-          chmod +x yq
+          chmod +x /usr/bin/yq
           ls -la
           mkdir -p ~/.dbt
           cp dbt_cloud.yml  ~/.dbt/
